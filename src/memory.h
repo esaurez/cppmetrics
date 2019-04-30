@@ -1,6 +1,7 @@
 #ifndef _MEMORY_H_INCLUDED
 #define _MEMORY_H_INCLUDED
 
+#include <atomic>
 #include <chrono>
 #include <thread>
 #include <unordered_map>
