@@ -15,6 +15,9 @@ else()
   message("CUDA not found, compiling without cuda")
 endif()
 
+SET(WARNING_COMPILE_FLAGS "-Wno-psabi")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${WARNING_COMPILE_FLAGS}" )
+
 add_definitions(-std=c++11)
 add_subdirectory(src)
 
